@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TITLE ------------------------------>
+    <title>ლ 𝖙𝖔 𝖉𝖔 𝖑𝖎𝖘𝖙 ლ</title>
+    <!-- CSS LINK ------------------------------>
+    <link rel="stylesheet" href="./index.css" >
+    <!-- ICONS ------------------------------>
+    <link rel="icon" href="./task.ico" >
+    <!-- BOXICONS LINK ------------------------------>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+<!-- HTML CODE ------------------------------>
+    
+
+<div class="copyright" title="ლ 🇨​🇷​🇪​🇦​🇹​🇪​🇩​ 🇧​🇾​ 🇳​🇴​🇧​🇮​101 ლ" >
+    <i class='bx bxs-copyright co'></i>
+</div>
+
+<style>
+
+*{
+    cursor: url(./cursor/left_ptr.cur), auto;
+}
+body {
+    overflow: hidden;
+}
+a:hover, button:hover, .crud:hover {
+    cursor: url(./cursor/pointing_hand.cur), pointer;
+}
+.copyright{
+    position: fixed;
+    z-index: 9999;
+    border-radius: 50%;
+    background: rgb(197, 197, 197);
+    color: bisque;
+    width: 20px;
+    height: 20px;
+    bottom: 10px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.co{
+    color: rgb(0, 106, 133);
+    font-size: 20px;
+}
+::-webkit-scrollbar {
+    background: transparent;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: gray;
+}
+::selection {
+    background: rgb(0, 59, 141);
+    color: beige;
+}
+
+#loader, .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#loader{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(9deg, rgba(8,25,35,1) 0%, rgba(62,50,114,1) 92%);
+}
+.loader{
+    width: 50px;
+    height: 50px;
+    border: 10px solid beige;
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-radius: 50px;
+    animation: loader 2s linear infinite;
+}
+.n{
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border-radius: 50%;
+    animation: loader 2s linear infinite;
+    border: 2px dashed white;
+}
+@keyframes loader {
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+
+
+</style>
+
+
+<div id="loader" ><div class="loader" ><div class="n" ></div></div></div>
+
+<script>
+
+var loader = document.getElementById('loader');
+
+window.addEventListener('load', ()=>{
+    loader.style.display='none' ;
+})
+
+
+</script>
+
+<!-- TITLE OF SITE ------------------------>
+<div class="window" >
+
+<div class="content" style="text-align: center;" >
+    <span> 📝 to do list for save your tasks 📝 </span>
+</div>
+
+<!-- INPUT FOR ADD TASK ------------------------>
+
+<div class="content" >
+    <div class="top" >
+        <input type="text" placeholder="write you task here..." >
+        <button type="submit" onclick="btN();" title="add new task" > <i class='bx bxs-message-square-add ad'></i> </button>
+    </div>
+</div>
+
+<!-- CONTAINER FOR SAVE TASKS ------------------------>
+
+<div class="content" >
+
+    <div class="container" ></div>
+
+</div>
+
+</div>
+<!-- JS LINK ------------------------------>
+<script src="./index.js" ></script>
+
+</body></html>
